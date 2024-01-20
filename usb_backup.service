@@ -1,0 +1,10 @@
+[Unit]
+Description=Verificar y realizar respaldo de USB
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /home/mario/check_usb.sh
+
+[Install]
+WantedBy=multi-user.target
+

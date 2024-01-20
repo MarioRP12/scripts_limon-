@@ -1,0 +1,1 @@
+SUBSYSTEM=="block", ATTRS{idVendor}=="0951", ACTION=="add", ENV{DISPLAY}=":0", RUN+="/bin/systemctl start usb_backup.service"
